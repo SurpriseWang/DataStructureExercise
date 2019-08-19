@@ -7,16 +7,16 @@ package com.wang.classes;
  * @date 2019年8月19日下午7:15:40
  */
 public class SelectionSort {
-	public static Integer[] selectionSort(Integer[] arrs) {
-		for (int i = 0; i < arrs.length - 1; i++) {
-			int index = i;
-			int j;
+	public Integer[] selectionSort(Integer[] arrs) {
+		for (Integer i = 0; i < arrs.length - 1; i++) {
+			Integer index = i;
+			Integer j;
 			for (j = i + 1; j < arrs.length; j++) {
 				if (arrs[j] < arrs[index]) {
 					index = j;
 				}
 			}
-			int tmp = arrs[index];
+			Integer tmp = arrs[index];
 			arrs[index] = arrs[i];
 			arrs[i] = tmp;
 		}

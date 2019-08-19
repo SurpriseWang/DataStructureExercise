@@ -7,18 +7,15 @@ package com.wang.classes;
  * @date 2019年8月19日下午7:34:35
  */
 public class InterpolationSort {
-	public int[] interpoliationSort(int[] arrs) {
-		
-		for (int i = 0; i < arrs.length; i++) {
-			int minValue = i;
-			System.out.println("i:"+i);
-			for (int j = i; j < arrs.length-1; j++) {
-				System.out.println("j:"+j);
+	public static Integer[] interpoliationSort(Integer[] arrs) {
+		for (Integer i = 0; i < arrs.length; i++) {
+			Integer minValue = i;
+			for (int j = i; j < arrs.length - 1; j++) {
 				if (arrs[j] > arrs[j + 1]) {
-					minValue = j+1;
-				} 
+					minValue = j + 1;
+				}
 			}
-			int temp = arrs[i];
+			Integer temp = arrs[i];
 			arrs[i] = arrs[minValue];
 			arrs[minValue] = temp;
 		}
