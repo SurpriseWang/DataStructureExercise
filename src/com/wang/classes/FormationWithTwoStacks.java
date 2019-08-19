@@ -45,6 +45,5 @@ public class FormationWithTwoStacks {
 		for (String string : returnValue) {
 			System.out.println(string);
 		}
-
 	}
 }
