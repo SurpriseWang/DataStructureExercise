@@ -3,11 +3,12 @@ package com.wang.classes;
 import java.util.Stack;
 
 /**
+ * 两个栈模拟一个队列
  * @author SurpriseWang
  * @date 2019年8月19日下午2:11:23
  */
 public class FormationWithTwoStacks {
-	//两个栈模拟一个队列
+	
 	private Stack<String> cacheStack = new Stack<>();
 	private Stack<String> popupStack = new Stack<>();
 
