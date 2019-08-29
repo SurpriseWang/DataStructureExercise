@@ -1,4 +1,4 @@
-package com.wang.classes;
+package com.wang.sort;
 
 /**
  * 冒泡排序
